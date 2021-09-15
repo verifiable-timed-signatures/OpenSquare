@@ -1,3 +1,16 @@
+# README for the CCS reviewers
+
+- Our contract is in `contracts/OpenSqaure.sol`.
+- Our test file is `test/opensquare.test.ts`. Can be tested by running `yarn test`. Make sure all necessary dependencies and yarn are installed. A test run will also output the associated gas costs.
+- To measure the deployment costs, we used `truffle` to deploy the contract and used its output. 
+- A typescript version of the underlying cryptography is in `test/opensquare.ts`. This must print `true` in the beginning of a yarn test. 
+
+## Notes
+- This is a prototype library modifying the implementation from https://github.com/kilic/evmvdf. 
+- Sometimes the hash to prime function cannot find a prime within MAX_NONCE tries and some of the tests may fail.
+
+
+=== ORIGINAL README from the repo ===
 # Delay Function Verification Smart Contract
 
 This is a PoC level code. Do not use it.
